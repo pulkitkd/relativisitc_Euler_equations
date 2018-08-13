@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="reldgale" />
+		<Option makefile="makefile" />
+		<Option makefile_is_custom="1" />
+		<Option execution_dir="../src" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/reldgale" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$make -f $makefile " />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean$target" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile  &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/reldgale" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../src/adaptation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/atgauss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/cerk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/con2primV.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/dg.h" />
+		<Unit filename="../src/dg1d.h" />
+		<Unit filename="../src/div.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/gauss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/how-things-work" />
+		<Unit filename="../src/init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/makefile" />
+		<Unit filename="../src/meshvel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/movegrid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/out.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/predictor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/project.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/result.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/shape.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/taylor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/update.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/utils.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

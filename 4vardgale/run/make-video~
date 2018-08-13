@@ -1,0 +1,7 @@
+#!/bin/bash
+# My first script
+
+remove -r video
+../src/dg 1
+cp animate.gnu video
+gnuplot animate.gnu

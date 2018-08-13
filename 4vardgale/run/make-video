@@ -1,0 +1,9 @@
+#!/bin/bash
+# My first script
+
+rm -r video
+../src/dg 1
+cp animate.gnu video
+cd video
+gnuplot animate.gnu
+cd ..

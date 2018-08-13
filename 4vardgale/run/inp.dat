@@ -1,0 +1,49 @@
+cfl         0.5
+nc          5000
+pord        1
+nplt        6
+flux        1
+M           0.0
+ale         0
+test_case   20
+pos_lim     0
+tvd_lim		0
+adaptation	0
+hmin	      1e-3
+hmax	      1e1
+siter       1
+chi         0.0
+eta         0.1
+
+flux     : 1=LxF, 2=ROE 3=HLLC, 4=ROEFIX, 5=HLL-CPS, 6=HLL
+
+test_case:
+ SOD      10
+ MSOD     11
+ SSOD     12
+ BLAST    20
+ LAX      30
+ LOWD     40
+ SHUOSHER 50
+ PULSE	  60
+ NOH      90
+
+PORD:
+1: degree=0, Taylor Predictor
+2: degree=1, Taylor predictor
+3: degree=2, CERK2 Predictor
+4: degree=3, CERK3 Predictor
+
+M: paremeter in TVB limiter
+pos_lim: 0=no, 1=yes
+tvd_lim: 0=no limiter, 1=TVD, 2=moment
+adaptation: 0=no, 1=yes
+hmin: smallest allowed cell size
+hmax: largest allowed cell size
+siter: number of velocity smoothing iterations
+chi, eta: used in springel velocity correction. To disable correction, set chi=0
+
+
+
+
+

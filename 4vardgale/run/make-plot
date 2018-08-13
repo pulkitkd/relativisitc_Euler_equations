@@ -1,0 +1,12 @@
+#!/bin/bash
+# My first script
+
+../src/dg #change directory to 'src' and run the program 'dg'
+gnuplot plot.gnu #use gnuplot and run the file plot.gnu
+ps2pdf plot.ps #convert the generated postscript file to pdf
+okular plot.pdf #open the pdf file in okular
+
+#to run this sript, open terminal and given the command
+#chmod -x make-plot
+#this gives the make-plot script the necessary permissions to run
+#now run ./make-plot
