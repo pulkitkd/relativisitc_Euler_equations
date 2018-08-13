@@ -1,0 +1,47 @@
+* Edit input file inp.dat
+  Set the test case as 20 (BLAST)
+  In order to run a test case of your choice-
+ -go to the source file init.c
+ -scroll down to line 523 to function InitCondBlast
+ -put in the values for primitive variables(rho, u1, u2, p)
+ -go to line 79 and define the time for which the case is to be run
+ -save and compile
+
+* Compile the code
+
+  cd 4vardgale/src
+  make
+
+* Run the code
+
+  cd 4vardgale/run
+  ../src/4vardgale
+
+It creates three files
+
+avg : contains cell average solution
+sol : contains detailed solution
+h   : contains cell sizes
+
+* Plot the results
+
+  gnuplot 'plot.gnu'
+  open plot.ps
+
+You can directly go to the sine-wave directory and 
+  $gnuplot animate.gnu
+to see a travelling sine wave which perfectly matches with the exact solution.
+===========================================================================
+OR
+===========================================================================
+I have also written 2 script files which automate some of this work and plot the results (plots or videos) 
+*Edit the input files as above
+*Compile the code
+*Go to directory 4vardgale/run
+*In terminal, type
+  $chmod -x make-plot
+  $./make-plot
+
+This will run the code and plot the results. Similarly for make-video(files will be placed in directory 4vardgale/run/video). 
+
+
